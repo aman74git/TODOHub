@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.body-ele {
+  flex-grow: 1;
+}
+.nav-item {
+  font-size: 1.25rem;
+}
+
+.list-grp-item {
+  list-style: none;
+  /* border: 1px dotted rgb(185, 185, 185); */
+  /* border: 3px solid forestgreen; */
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 0.2rem 0.2rem 1.5rem rgba(97, 97, 97, 0.15);
+}
+.delete-btns,
+.edit-btns,
+.save-btns {
+  cursor: pointer;
+}
+#no-pending,
+#no-complete {
+  color: rgb(176, 176, 176);
+}

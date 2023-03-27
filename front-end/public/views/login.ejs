@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include ('./common/head') %>
+
+  <body class="vh-100">
+    <%- include ('./common/navbar') %>
+
+    <div class="container body-ele">
+      <!-- login form  -->
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="card mt-5">
+            <div class="card-header">
+              <h3 class="text-center">Login</h3>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="login-email" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="login-email"
+                    name="email"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="login-password" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="login-password"
+                    name="password"
+                  />
+                </div>
+                <button
+                  type="submit "
+                  id="login-submit"
+                  class="btn btn-primary disabled"
+                >
+                  Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container end  -->
+    </div>
+    <!-- bootstrap js -->
+
+    <%- include ('./common/footer') %>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/elements.js"></script>
+    <script src="script/loginScript.js"></script>
+    <script src="script/loginServerConnect.js"></script>
+  </body>
+</html>

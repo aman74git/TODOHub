@@ -1,0 +1,85 @@
+<!-- navbar  -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid container-xxl">
+    <a class="navbar-brand" href="#"><h3>TODO WORLD</h3></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <!-- nav for home page  -->
+        <% if (currPage === 'home') { %>
+        <li class="nav-item" id="home-link">
+          <a
+            class="nav-link <% if (currPage === 'home') { %> active <% } %>"
+            aria-current="page"
+            href="/home"
+            >Home</a
+          >
+        </li>
+        <!-- inserting extra  -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Logout
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/logout?device=current"
+                >from current device</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/logout?device=all"
+                >from all device</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <!-- inserting extra ends  -->
+        <!-- <li class="nav-item" id="logout-link">
+          <a class="nav-link" href="/logout?device=current">Logout</a>
+        </li>
+        <li class="nav-item" id="logout-all-link">
+          <a class="nav-link" href="/logout?device=all"
+            >Logout from all device</a
+          >
+        </li> -->
+
+        <!-- nav for login/register page  -->
+
+        <% } else { %>
+
+        <li class="nav-item" id="login-link">
+          <a
+            class="nav-link <% if (currPage === 'login') { %> active <% } %>"
+            aria-current="page"
+            href="/login"
+            >Login</a
+          >
+        </li>
+        <li class="nav-item" id="register-link">
+          <a
+            class="nav-link <% if (currPage && currPage === 'reg') { %> active <% } %>"
+            href="/register"
+            >Register</a
+          >
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>
