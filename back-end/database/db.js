@@ -10,7 +10,7 @@ const connectDB = async () => {
   //   useUnifiedTopology: true,
   // });
   await db.connect(
-    `mongodb+srv://aman_kumar:${process.env.DB_PASSWORD}@cluster0.be8wbb1.mongodb.net/todoDB?retryWrites=true&w=majority`,
+    `mongodb+srv://${process.env.DB_USER_NAME}:${process.env.DB_PASSWORD}@cluster0.be8wbb1.mongodb.net/todoDB?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
