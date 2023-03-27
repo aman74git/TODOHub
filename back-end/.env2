@@ -1,0 +1,9 @@
+// rename this file to .env and remove this comment
+
+PORT = 3000
+
+DB_PASSWORD=123456 // replace 123456 by your database password and remove this comment
+
+ACCESS_TOKEN_SECRET= // replace this value by a random string atleast 32chars and remove this comment
+
+REFRESH_TOKEN_SECRET= // replace this value by a random string atleast 32chars and remove this comment
